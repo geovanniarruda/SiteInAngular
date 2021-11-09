@@ -14,8 +14,91 @@ body{
     background: #C8D8DD;
 }
 
+/* ------Incio Baner----- */
+
+#game{
+    width: 100%;
+    position: relative;
+}
+
+#game img{
+    width: 100%;
+}
+
+#texto-img{
+    position: absolute;
+    bottom: 70px;
+    right: 60px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Nova Flat', cursive;
+    font-size: 40px;
+}
+
+#texto-img a:hover{
+    text-decoration: underline;
+}
+
+.baner{
+    width: 100%;
+    height: 80vh;
+    object-fit:cover;
+}
+
+/*------------ Inicio dos Produtos em Promoção-------------- */
 
 
+.titulos{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    
+}
+
+.prod-promo{
+    width: 30%;
+    height: 500px;
+    border: 2px outset rgb(168, 167, 167);
+    border-radius: 10px;
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.prod-promo:hover{
+  
+    height: 502px;
+    box-shadow: 6px 7px 3px #666666;
+}
+
+.prod-promo a img{
+    width: 85%;
+    height: 60%;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.prod-promo span{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- Fim dos produtos em Promoção ---------- */
+
+/* ---------- Inicio do Navegue por Categoria ---------- */
+
+.categoria{
+    width: 20%;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 4%;
+    margin-bottom: 70px;
+}
+
+/* ------- fim das categorias ---------- */
 @media screen and (max-width: 768px){
 
     input{

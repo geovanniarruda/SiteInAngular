@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+/* ------- Footer ---------- */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+footer{
+    height: 310px;
+    background: black;
+    color: white;
 }
 
-
-body{
-	font-size: 1em;
-	font-family: 'PT Serif', serif;
-    background: #C8D8DD;
+#rodape{
+    margin-left: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-
 
 @media screen and (max-width: 768px){
 

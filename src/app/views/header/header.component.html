@@ -1,0 +1,30 @@
+<header>
+    <div id="menu-topo">
+      <!--Logo, busca e icone de login/carrinho -->
+      <a  href="/"  class="hamburguer mt-2" id="hamburguer" style="color: white;" > 
+        <i class="fas fa-bars"  ></i>
+      </a> 
+      <div id="logo">
+        <a class="link-unstyled" style="color: white; text-decoration: none;" href="index.html">Game Mania</a>
+      </div>
+      <div>
+      <form #search >
+      <input id="busca" name="pesquisa" [(ngModel)]= "searchModel.pesquisa" type="search" (search)="onSubmit()" placeholder="Pesquise por..." value="" >
+      </form>
+      </div>
+      <div>
+        <a href="#"><i class="far fa-user-circle " style="font-size: 38px; margin-right: 10px; color: white;"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart " style="font-size: 30px; color: white;"></i></a>
+      </div>
+    </div>
+
+    <!-- Barra navegação-->
+    <nav>
+      <ul id="navegacao"  class="mb-0">
+        <li><a routerLink="/computadores"> Computador</a></li>
+        <li><a routerLink="/consoles">Console</a></li>
+        <li><a routerLink="/celulares">Celulares</a></li>
+        <li><a routerLink="/games">Games</a></li>
+      </ul>
+    </nav>
+  </header>

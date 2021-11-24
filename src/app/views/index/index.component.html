@@ -9,6 +9,13 @@
       <h1 class="titulos">Produtos em Promoção</h1>
     </div>
     <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+      <div *ngFor="let produto of produtos" class="prod-promo">
+        <a href="#"><img src="../../../assets/imagem/fone.jpg" style="align-items: center;" alt="Fone de ouvido"></a>
+        <span><b>{{produto.nome }}</b></span>
+        <span>{{produto.valor }}</span>
+      </div>
+<!-- 
       <div class="prod-promo">
         <a href="#"><img src="../../../assets/imagem/fone.jpg" style="align-items: center;" alt="Fone de ouvido"></a>
         <span><b>Fone de Ouvido</b></span>
@@ -23,7 +30,7 @@
         <a href="#"><img src="../../../assets/imagem/pc.jpg" style="align-items: center;" alt="Notebook"></a>
         <span><b>Notebook</b></span>
         <span>R$5999,00</span>
-      </div>
+      </div> -->
     </div>
   </section>
 

@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "email": "geovanni@email.com",
+      "password": "$2a$10$fxFvZBR7pLEzTrdyt6w30ezgx6qmaGIJrEXZc7spEUbSS8lbsPsAq",
+      "id": 1
+    }
+  ],
   "produtos": [
     {
       "id": 1,

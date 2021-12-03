@@ -20,6 +20,18 @@ export class LoginComponent implements OnInit {
   mensagem = "";
 
   onSubmit() {
+
+    const blacklist: string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "insert ", "exec ", "--", "#", "*", ";"]
+
+    blacklist.forEach(palavra => {
+      if(this.loginModel.email.toLowerCase().includes(palavra)) {
+        this.mensagem = "Dados inválidos!: " + palavra
+
+        return;
+      }
+    });
+
+
    this.LoginService.login(this.loginModel).subscribe( (response) => {
      this.mensagem = "Login feito com sucesso!";
      this.router.navigateByUrl("/");
